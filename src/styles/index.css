@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+}
+
+body    {
+    font: 13px verdana;
+    color: #000;
+    background: #000;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
+
+.screen-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*
+ *  Footer
+ */
+
+footer {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.svg-icon path {
+    fill: #808080;
+}
+
+.svg-icon path:hover {
+    fill: #ccc;
+}
+
+.social-link:hover .svg-icon path {
+    fill: #ccc;
+}
