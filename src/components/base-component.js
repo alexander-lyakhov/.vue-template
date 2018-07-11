@@ -7,8 +7,8 @@
             app.componentByID = {};
         }
 
-        if (!app.componentsByName) {
-            app.componentsByName = {};
+        if (!app.components) {
+            app.components = {};
         }
 
         if (this.$el.id) {
@@ -17,11 +17,11 @@
 
         var componentName = this.$options.name;
 
-        if (app.componentsByName[componentName] === undefined) {
-            app.componentsByName[componentName] = [];
+        if (app.components[componentName] === undefined) {
+            app.components[componentName] = [];
         }
 
-        app.componentsByName[componentName].push(this);
+        app.components[componentName].push(this);
     },
 
     methods: {

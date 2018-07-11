@@ -2,11 +2,11 @@
 import './styles/index.css';
 
 import Vue from 'vue';
-import app from './components/app/app.vue';
+import App from './components/app/app.vue';
 
 window.app.root = new Vue({
     el: '#app',
-    render: compile => compile(app)
+    template: '<App />',
+    components: {App}
+    //render: compile => compile(app)
 });
-
-export default window.app;
